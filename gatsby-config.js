@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Eddie's Portfolio`,
     description: `Eddie (Thịnh Lê) is a passionate learner who is excited to land his next job as a front-end web developer. He has been trained to catch up with modern front-end technologies such as HTML/CSS, JavaScript and React-Redux. Find out more about Eddie.`,
-    author: `@gatsbyjs`,
+    author: `Eddie (Thinh Le) @gatsbyjs`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

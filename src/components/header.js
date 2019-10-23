@@ -7,7 +7,7 @@ class Header extends Component {
     super(props)
 
     this.state = {
-      preScrollPos: window.pageYOffset,
+      preScrollPos: typeof window !== "undefined" && window.pageYOffset,
       isVisible: false,
     }
   }
@@ -24,10 +24,12 @@ class Header extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener("scroll", () => this.handleVisibility())
+    typeof window !== "undefined" &&
+      window.addEventListener("scroll", () => this.handleVisibility())
   }
   componentWillUnmount() {
-    window.removeEventListener("scroll", () => this.handleVisibility())
+    typeof window !== "undefined" &&
+      window.removeEventListener("scroll", () => this.handleVisibility())
   }
 
   render() {

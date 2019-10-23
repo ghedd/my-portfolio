@@ -6,6 +6,7 @@ class BackToTopBtn extends Component {
     super(props)
 
     this.state = {
+      preScrollPos: window.pageYOffset,
       isVisible: false,
     }
   }
@@ -15,30 +16,32 @@ class BackToTopBtn extends Component {
   }
 
   handleVisibility = () => {
-    const isScrolled = window.scrollY >= 100
-    if (!isScrolled) {
-      this.setState({
-        isVisible: false,
-      })
-    }
+    const { preScrollPos } = this.state
+
+    const currentScrollPos = window.pageYOffset
+    const isVisible = preScrollPos < currentScrollPos
+
     this.setState({
-      isVisible: true,
+      preScrollPos: currentScrollPos,
+      isVisible,
     })
   }
 
   componentDidMount() {
     window.addEventListener("scroll", () => this.handleVisibility())
   }
-
-  static getDerivedStateFromProps() {
-    const isScrolled = window.scrollY >= 250
-    if (!isScrolled) {
-      return {
-        isVisible: false,
-      }
-    }
-    return null
+  componentWillUnmount() {
+    window.removeEventListener("scroll", () => this.handleVisibility())
   }
+  // static getDerivedStateFromProps() {
+  //   const isScrolled = window.scrollY >= 250
+  //   if (!isScrolled) {
+  //     return {
+  //       isVisible: false,
+  //     }
+  //   }
+  //   return null
+  // }
 
   render() {
     return (

@@ -32,7 +32,7 @@ const Project = ({
         <p>{description}</p>
       </div>
       <div className="project__navigation-wrapper">
-        {/* {production.length > 0 ? (
+        {production === "" ? (
           <p className="project__navigation">
             <a href={production} target="_blank" rel="noopener noreferrer">
               <MdArrowForward className="project__navigation-arrow" />
@@ -42,8 +42,8 @@ const Project = ({
             </a>
           </p>
         ) : (
-          <div></div>
-        )} */}
+          <></>
+        )}
         <p className="project__navigation">
           <a href={url} target="_blank" rel="noopener noreferrer">
             <MdArrowForward className="project__navigation-arrow" />

@@ -8,7 +8,8 @@
     "image": "./images/project-01.jpg",
     "imageCredit": "Sarah Pflug",
     "imageStock": "https://burst.shopify.com/",
-    "authorUrl": "https://burst.shopify.com/@sarahpflugphoto",
+    "authorUrl": 
+    "https://burst.shopify.com/@sarahpflugphoto",
     "description": "This is an assignment by FreeCodeCamp. It demostrates a HTML5/CSS3 form which prioritizes user experience on mobile devices. The form includes familiar fields as designing an online form."
   },
   {

@@ -400,7 +400,7 @@ header h3 {
   grid-area: description;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: flex-start;
 }
 .project__description p {
@@ -413,7 +413,7 @@ header h3 {
   padding-left: 16px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: flex-start;
 }
 .project__navigation {

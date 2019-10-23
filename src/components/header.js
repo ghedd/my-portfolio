@@ -25,8 +25,10 @@ class Header extends Component {
   componentDidMount() {
     window.addEventListener("scroll", () => this.handleVisibility())
   }
-
-  static getDerivedStateFromProps() {
+  componentWillUnmount() {
+    window.addEventListener("scroll", () => this.handleVisibility())
+  }
+  /* static getDerivedStateFromProps() {
     const isScrolled = window.scrollY >= 200
     if (!isScrolled) {
       return {
@@ -34,7 +36,7 @@ class Header extends Component {
       }
     }
     return null
-  }
+  } */
 
   render() {
     return (

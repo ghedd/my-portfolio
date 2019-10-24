@@ -32,7 +32,7 @@ const Project = ({
         <p>{description}</p>
       </div>
       <div className="project__navigation-wrapper">
-        {production.length < 0 ? (
+        {production === "not available" ? null : (
           <p className="project__navigation">
             <a href={production} target="_blank" rel="noopener noreferrer">
               <MdArrowForward className="project__navigation-arrow" />
@@ -41,8 +41,6 @@ const Project = ({
               View production build
             </a>
           </p>
-        ) : (
-          <></>
         )}
         <p className="project__navigation">
           <a href={url} target="_blank" rel="noopener noreferrer">

@@ -32,7 +32,7 @@ const Project = ({
         <p>{description}</p>
       </div>
       <div className="project__navigation-wrapper">
-        {production.lenght < 0 ? (
+        {production.length < 0 ? (
           <p className="project__navigation">
             <a href={production} target="_blank" rel="noopener noreferrer">
               <MdArrowForward className="project__navigation-arrow" />

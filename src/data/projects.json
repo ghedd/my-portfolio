@@ -8,8 +8,7 @@
     "image": "./images/project-01.jpg",
     "imageCredit": "Sarah Pflug",
     "imageStock": "https://burst.shopify.com/",
-    "authorUrl": 
-    "https://burst.shopify.com/@sarahpflugphoto",
+    "authorUrl": "https://burst.shopify.com/@sarahpflugphoto",
     "description": "This is an assignment by FreeCodeCamp. It demostrates a HTML5/CSS3 form which prioritizes user experience on mobile devices. The form includes familiar fields as designing an online form."
   },
   {
@@ -41,7 +40,7 @@
     "title": "LMS Web App",
     "slug": "project-04",
     "production": "",
-    "url": "https://codepen.io/eddie-lewis/pen/eXQpJY",
+    "url": "https://github.com/quanghien98/E_Learning",
     "image": "./images/project-04.jpg",
     "imageCredit": "Nicole De Khors",
     "imageStock": "https://burst.shopify.com/",

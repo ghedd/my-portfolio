@@ -48,7 +48,7 @@ class BackToTopBtn extends Component {
   render() {
     return (
       <div className={this.state.isVisible ? "back-to-top__btn  " : "hidden "}>
-        <p>back to top</p>
+        {/* <p>back to top</p> */}
         <button className="btn" onClick={this.backToTop}>
           <MdArrowUpward />
         </button>

@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { Component } from "react"
+import MyLogo from "../data/images/logo_transparent_modified.png"
 
 class Header extends Component {
   constructor(props) {
@@ -47,24 +48,34 @@ class Header extends Component {
           style={{
             margin: `0 auto`,
             maxWidth: 1600,
-            padding: `1.45rem 1.0875rem`,
+            padding: 8,
             display: `flex`,
             justifyContent: `space-between`,
+            alignItems: `center`,
           }}
         >
           <div style={{ zIndex: 20 }}>
-            <h3 style={{ margin: 0 }} className="site-title">
-              <Link
-                to="/"
+            <Link
+              to="/"
+              className="site-title"
+              // style={{
+              //   color: `whitesmoke`,
+              //   textDecoration: `none`,
+              // }}
+              // className={this.state.isVisible ? "" : "hidden"}
+            >
+              <img
+                src={MyLogo}
+                alt="Eddie Le"
                 style={{
-                  color: `whitesmoke`,
-                  textDecoration: `none`,
+                  height: "auto",
+                  width: 120,
+                  objectFit: "fill",
+                  objectPosition: "center",
+                  margin: 0,
                 }}
-                // className={this.state.isVisible ? "" : "hidden"}
-              >
-                {this.props.siteTitle}
-              </Link>
-            </h3>
+              />
+            </Link>
           </div>
           <div style={{ zIndex: 20, display: "flex" }}>
             <h3 style={{ margin: 0, marginRight: 16 }}>

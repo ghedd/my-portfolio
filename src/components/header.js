@@ -13,10 +13,8 @@ class Header extends Component {
     }
   }
   handleVisibility = () => {
-    const { preScrollPos } = this.state
-
     const currentScrollPos = window.pageYOffset
-    const isVisible = preScrollPos < currentScrollPos
+    const isVisible = 10 < currentScrollPos
 
     this.setState({
       preScrollPos: currentScrollPos,
@@ -35,15 +33,7 @@ class Header extends Component {
 
   render() {
     return (
-      <header
-        style={{
-          marginBottom: `1.45rem`,
-          position: "sticky",
-          top: -1,
-          zIndex: 15,
-        }}
-        className={this.state.isVisible ? "shadow" : ""}
-      >
+      <header className={this.state.isVisible ? "shadow" : ""}>
         <div
           style={{
             margin: `0 auto`,

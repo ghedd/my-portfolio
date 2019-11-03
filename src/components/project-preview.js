@@ -6,7 +6,9 @@ const ProjectPreview = ({ projects }) => {
     <>
       <div className="project-preview" id="project-preview">
         <h1>Projects</h1>
-        <ProjectCard projects={projects} />
+        <div className="project-preview__wrapper">
+          <ProjectCard projects={projects} />
+        </div>
       </div>
     </>
   )

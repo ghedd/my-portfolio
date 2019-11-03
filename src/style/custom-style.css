@@ -79,6 +79,13 @@ button.btn:hover {
 /* ---------------- header --------------- */
 header {
   transition: linear 0.3s 0.2s;
+  margin-bottom: 1.45rem;
+  position: sticky;
+  top: -1px;
+  z-index: 15;
+}
+header:hover {
+  background: #29f399;
 }
 header h3 {
   font-size: 24px;
@@ -266,9 +273,18 @@ header h3 {
 /* ----------- project-preview ----------- */
 
 .project-preview {
+  display: flex;
+  flex-direction: column;
   grid-area: project-preview;
+  min-height: 75vh;
+  align-items: center;
+  justify-content: center;
+}
+.project-preview h1 {
+  align-self: flex-start;
 }
 .project-preview__wrapper {
+  display: flex;
   padding: 16px 8px;
   padding-bottom: 32px;
   display: flex;
@@ -276,8 +292,6 @@ header h3 {
   justify-content: space-around;
   /* gap: 16px 32px; */
   /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
-  justify-content: space-around;
-  min-height: 70vh;
 }
 
 .project-preview-card {
@@ -350,15 +364,19 @@ header h3 {
   -webkit-line-clamp: 3;
 }
 @media only screen and (max-width: 480px) {
-  .project-preview-card__text {
+  .project-preview-card__text p {
     display: none;
+  }
+  .project-preview-card__text {
+    padding-bottom: 0;
   }
 }
 /* -------- end: .project-preview -------- */
 
 /* --------------- project --------------- */
 .project {
-  min-height: 80vh;
+  max-height: 100vh;
+  padding: 16px 0;
   display: grid;
   gap: 8px;
   grid-template-areas:
@@ -441,6 +459,9 @@ header h3 {
 .contact {
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  height: 50vh;
 }
 .contact p {
   margin-bottom: 0;
@@ -482,7 +503,8 @@ header h3 {
   transform: scale(1.2);
 }
 
-/* -------------- responsive ------------- */
+/* ----------- NOTE responsive ----------- */
+
 @media only screen and (max-width: 1600px) {
   header {
     padding: 8px;
@@ -490,22 +512,43 @@ header h3 {
   header .site-title {
     display: none;
   }
+  .contact__detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 @media only screen and (max-width: 700px) {
   header {
     background: rgb(42, 245, 152) !important;
+  }
+  .container-fluid {
+    padding: 8px 16px !important;
+  }
+  .about {
+    height: 100vh;
+  }
+
+  .greeting {
+    height: 100vh;
   }
   .btn {
     height: 36px !important;
     width: 36px !important;
     font-size: 24px !important;
   }
+  .contact {
+    flex-wrap: wrap;
+    height: 70vh;
+    justify-content: center;
+  }
 }
 @media only screen and (max-width: 480px) {
   .about h1,
-  .projects h1,
+  .project-preview h1,
   .contact h1 {
     font-size: 8vw !important;
+    text-align: center;
   }
 
   /* ---------------- header --------------- */
@@ -519,7 +562,7 @@ header h3 {
   }
   /* --------------- greeting -------------- */
   .greeting {
-    min-height: 60vh;
+    min-height: 80vh;
     text-align: center;
   }
   .greeting h1 {
@@ -530,9 +573,9 @@ header h3 {
     font-size: 5vw !important;
     font-size: calc(100% + 4vw) !important;
   }
-  .greeting__btn p {
+  /* .greeting__btn p {
     font-size: 12px;
-  }
+  } */
 
   /* ---------------- about ---------------- */
   .about {
@@ -543,26 +586,45 @@ header h3 {
     font-size: 5vw;
   }
   /* --------------- projects -------------- */
-  .project-preview h1 {
-    font-size: 6vw;
+  .project-preview {
+    min-height: 80vh;
   }
+  
+  .project-preview h1{
+    align-self: center;
+  }
+
   .project-preview p {
     font-size: 5vw;
   }
   .project-preview span {
     font-size: 4vw;
   }
-  .contact {
-    flex-wrap: wrap;
+
+  .project-preview-card__text a h1 {
+    font-size: 24px !important;
+  }
+
+  .contact p {
+    text-align: center;
+  }
+  .contact__wrapper,
+  .contact__detail-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact__contact {
+    flex-direction: column;
   }
   .contact span {
     line-height: 1;
   }
   .contact__media-wrapper {
-    flex-wrap: wrap;
-    padding: 0;
+    padding: 0 4px;
+    justify-content: center;
   }
-  .contact__media-wrapper > .contact__media {
-    font-size: 45px !important;
+  .contact__media svg {
+    font-size: 55px !important;
   }
 }

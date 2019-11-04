@@ -21,7 +21,9 @@ const AboutMe = () => {
         apply aquired knowledge in mini projects that I build. I'm very excited
         to show you{" "}
         <a href="#project-preview">
-          <span className="about__highlight">some of my work</span>
+          <span className="about__highlight about__link-to-projects">
+            some of my work
+          </span>
         </a>{" "}
         .
       </p>

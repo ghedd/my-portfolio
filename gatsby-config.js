@@ -4,6 +4,7 @@ module.exports = {
     description: `Thịnh Lê (Eddie) is a passionate learner who is excited to land his next job as a front-end web developer. He has been trained to catch up with modern front-end technologies such as HTML/CSS, JavaScript and React-Redux. Find out more about Eddie.`,
     author: `@Thinh Le (Eddie)`,
     siteUrl: "https://eddie-thinhle.netlify.com/",
+    image: "./src/data/images/profile.jpg",
   },
   plugins: [
     `gatsby-plugin-sitemap`,

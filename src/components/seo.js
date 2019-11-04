@@ -50,7 +50,7 @@ function SEO({ description, lang, meta, title }) {
           },
           {
             property: `odg:image`,
-            content: `https://i.postimg.cc/66hXgt2B/twitter-header-photo-2.png `,
+            content: `https://i.postimg.cc/66hXgt2B/twitter-header-photo-2.png`,
           },
 
           {
@@ -59,7 +59,7 @@ function SEO({ description, lang, meta, title }) {
           },
           {
             name: `twitter:card`,
-            content: `summary`,
+            content: `summary_large_image`,
           },
           {
             name: `twitter:creator`,

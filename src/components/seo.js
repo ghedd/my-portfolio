@@ -51,7 +51,7 @@ function SEO({ description, lang, meta, title, image }) {
           },
           {
             property: `odg:image`,
-            content: `image`,
+            content: image,
           },
 
           {

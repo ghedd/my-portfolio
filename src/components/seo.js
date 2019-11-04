@@ -49,8 +49,8 @@ function SEO({ description, lang, meta, title }) {
             content: metaDescription,
           },
           {
-            property: `odg:image`,
-            content: `https://i.postimg.cc/66hXgt2B/twitter-header-photo-2.png`,
+            property: `og:image`,
+            content: "https://i.postimg.cc/66hXgt2B/twitter-header-photo-2.png",
           },
 
           {
@@ -75,7 +75,7 @@ function SEO({ description, lang, meta, title }) {
           },
           {
             name: `twitter:image`,
-            content: `https://i.postimg.cc/66hXgt2B/twitter-header-photo-2.png`,
+            content: "https://i.postimg.cc/66hXgt2B/twitter-header-photo-2.png",
           },
           {
             itemprop: `name`,
@@ -87,7 +87,7 @@ function SEO({ description, lang, meta, title }) {
           },
           {
             itemprop: `image`,
-            content: `https://i.postimg.cc/66hXgt2B/twitter-header-photo-2.png`,
+            content: "https://i.postimg.cc/66hXgt2B/twitter-header-photo-2.png",
           },
         ].concat(meta)}
       />

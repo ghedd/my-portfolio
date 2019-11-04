@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Project from "../components/project"
+import SEO from "../components/seo"
 
 export const query = graphql`
   query($slug: String!) {
@@ -28,7 +29,6 @@ export const query = graphql`
 
 const ProjectTemplate = ({ data }) => {
   const project = data.projectsJson
-
   const title = project.title
   const description = project.description
   const production = project.production
@@ -40,6 +40,8 @@ const ProjectTemplate = ({ data }) => {
 
   return (
     <Layout>
+    <SEO title={title} description={description}
+    />
       <Project
         title={title}
         description={description}

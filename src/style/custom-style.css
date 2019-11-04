@@ -274,6 +274,9 @@ header h3 {
 .about__link-to-projects {
   text-decoration: underline;
 }
+.about__link-to-projects:hover {
+  color: #0841ab;
+}
 /* -------------- end: about ------------- */
 
 /* ----------- project-preview ----------- */
@@ -552,6 +555,7 @@ header h3 {
 @media only screen and (max-width: 480px) {
   .container-fluid {
     padding: 4px 8px !important;
+    overflow: hidden;
   }
   .about h1,
   .project-preview h1,
@@ -638,5 +642,10 @@ header h3 {
   }
   .contact__media svg {
     font-size: 55px !important;
+  }
+
+  /* ---------------- footer --------------- */
+  footer {
+    text-align: center;
   }
 }

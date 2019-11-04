@@ -27,9 +27,12 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    <head>
-      <meta name="google-site-verification" content="Aee5Sz7tPTwc5RUB475kAEjzgv4mNhmP7wK7DPkrBoM" />
-    </head>
+      <head>
+        <meta
+          name="google-site-verification"
+          content="Aee5Sz7tPTwc5RUB475kAEjzgv4mNhmP7wK7DPkrBoM"
+        />
+      </head>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
@@ -52,7 +55,10 @@ const Layout = ({ children }) => {
         <span>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org" style={{ color: "whitesmoke" }}>
+          <a
+            href="https://www.gatsbyjs.org"
+            style={{ color: "whitesmoke", textDecoration: "underline" }}
+          >
             Gatsby
           </a>
         </span>

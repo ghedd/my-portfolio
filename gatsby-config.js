@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Eddie`,
+    title: `Eddie's Portfolio`,
     description: `Thịnh Lê (Eddie) is a passionate learner who is excited to land his next job as a front-end web developer. He has been trained to catch up with modern front-end technologies such as HTML/CSS, JavaScript and React-Redux. Find out more about Eddie.`,
     author: `@Thinh Le (Eddie)`,
     siteUrl: "https://eddie-thinhle.netlify.com/",
@@ -36,6 +36,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-  // NOTE: The above code makes use of JSON data
-  // for vewing page static data via JSON file
 }

@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: "https://eddie-thinhle.netlify.com/",
   },
   plugins: [
+    `gatsby-plugin-advanced-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     {

@@ -74,7 +74,19 @@ function SEO({ description, lang, meta, title }) {
             content: metaDescription,
           },
           {
-            name: `twitter:image:src`,
+            name: `twitter:image`,
+            content: `https://i.postimg.cc/66hXgt2B/twitter-header-photo-2.png`,
+          },
+          {
+            itemprop: `name`,
+            content: `Thinh Le (Eddie)`,
+          },
+          {
+            itemprop: `description`,
+            content: metaDescription,
+          },
+          {
+            itemprop: `image`,
             content: `https://i.postimg.cc/66hXgt2B/twitter-header-photo-2.png`,
           },
         ].concat(meta)}

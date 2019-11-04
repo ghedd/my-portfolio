@@ -50,7 +50,7 @@ function SEO({ description, lang, meta, title }) {
           },
           {
             property: `odg:image`,
-            content: `https://i.postimg.cc/66hXgt2B/twitter-header-photo-2.png' border='0' alt='twitter-header-photo-2`,
+            content: `https://i.postimg.cc/66hXgt2B/twitter-header-photo-2.png `,
           },
 
           {
@@ -72,6 +72,10 @@ function SEO({ description, lang, meta, title }) {
           {
             name: `twitter:description`,
             content: metaDescription,
+          },
+          {
+            name: `twitter:image:src`,
+            content: `https://i.postimg.cc/66hXgt2B/twitter-header-photo-2.png`,
           },
         ].concat(meta)}
       />

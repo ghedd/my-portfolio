@@ -70,7 +70,7 @@ function SEO({ description, lang, meta, title }) {
           },
           {
             name: `twitter:image`,
-            content: ``,
+            content: `./src/data/images/profile.jpg`,
           },
         ].concat(meta)}
       />

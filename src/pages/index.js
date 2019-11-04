@@ -40,7 +40,7 @@ export default () => {
   const projects = data.allProjectsJson.edges
   return (
     <Layout>
-      <SEO title="Thinh Le (Eddie)" />
+      <SEO title="Thinh Le Eddie" />
       <Greeting />
       <AboutMe />
       <ProjectPreview projects={projects} />

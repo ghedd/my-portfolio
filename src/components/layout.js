@@ -27,12 +27,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <head>
-        <meta
-          name="google-site-verification"
-          content="Aee5Sz7tPTwc5RUB475kAEjzgv4mNhmP7wK7DPkrBoM"
-        />
-      </head>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{

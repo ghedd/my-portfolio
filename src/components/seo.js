@@ -50,12 +50,17 @@ function SEO({ description, lang, meta, title, image }) {
             content: metaDescription,
           },
           {
+            property: `odg:image`,
+            content: `image`,
+          },
+
+          {
             property: `og:type`,
             content: `website`,
           },
           {
             name: `twitter:card`,
-            content: `summary`,
+            content: `image`,
           },
           {
             name: `twitter:creator`,
@@ -68,10 +73,6 @@ function SEO({ description, lang, meta, title, image }) {
           {
             name: `twitter:description`,
             content: metaDescription,
-          },
-          {
-            name: `twitter:image`,
-            content: image,
           },
         ].concat(meta)}
       />

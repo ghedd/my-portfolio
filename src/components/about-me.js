@@ -3,7 +3,7 @@ import React from "react"
 const AboutMe = () => {
   return (
     <div id="about-me" className="about">
-      <h1>About</h1>
+      <h2>About</h2>
       <p>
         I'm enthusiastic about{" "}
         <span className="about__highlight">web applications</span> and{" "}

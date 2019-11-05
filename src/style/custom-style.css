@@ -53,9 +53,9 @@ button.btn:hover {
 .contact {
   color: whitesmoke;
 }
-.about h1,
-.project-preview h1,
-.contact h1 {
+.about h2,
+.project-preview h2,
+.contact h2 {
   text-align: left;
   font-size: 48px;
   margin: 0;
@@ -253,10 +253,9 @@ header h3 {
   justify-content: center;
   min-height: 90vh;
 }
-.about > h1 {
+/* .about > h2 {
   text-align: left;
-  font-size: 48px;
-}
+} */
 .about > p,
 .contact > p {
   padding-top: 16px;
@@ -289,7 +288,7 @@ header h3 {
   align-items: center;
   justify-content: center;
 }
-.project-preview h1 {
+.project-preview h2 {
   align-self: flex-start;
 }
 .project-preview__wrapper {
@@ -354,7 +353,7 @@ header h3 {
 .project-preview-card__text {
   display: grid;
   min-height: 15vh;
-  grid-template-rows: minmax(64px, auto) 1fr;
+  grid-template-rows: minmax(80px, auto) 1fr;
   padding: 24px 8px;
 }
 .project-preview-card__text span {
@@ -553,13 +552,15 @@ header h3 {
     padding: 4px 8px !important;
     overflow: hidden;
   }
-  .about h1,
-  .project-preview h1,
-  .contact h1 {
+  .about h2,
+  .project-preview h2,
+  .contact h2 {
     font-size: 8vw !important;
     text-align: center;
   }
-
+  .project-preview h2 {
+    align-self: center;
+  }
   /* ---------------- header --------------- */
 
   header h3 {
@@ -601,10 +602,6 @@ header h3 {
 
   .project-preview {
     min-height: 80vh;
-  }
-
-  .project-preview h1 {
-    align-self: center;
   }
 
   .project-preview p {

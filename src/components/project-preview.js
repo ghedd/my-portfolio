@@ -5,7 +5,7 @@ const ProjectPreview = ({ projects }) => {
   return (
     <>
       <div className="project-preview" id="project-preview">
-        <h1>Projects</h1>
+        <h2>Projects</h2>
         <div className="project-preview__wrapper">
           <ProjectCard projects={projects} />
         </div>

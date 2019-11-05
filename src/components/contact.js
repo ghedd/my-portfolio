@@ -9,7 +9,7 @@ import {
 const Contact = () => {
   return (
     <div className="contact" id="contact">
-      <h1>Contact</h1>
+      <h2>Contact</h2>
       <p>Please reach me via: </p>
       <div className="contact__wrapper">
         <div className="contact__detail-wrapper">

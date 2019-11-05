@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Eddie's Portfolio`,
-    description: `Thinh Le (Eddie) is a passionate learner who is excited to land his next job as a front-end web developer. He has been trained to catch up with modern front-end technologies such as HTML/CSS, JavaScript and React-Redux. Find out more about Eddie.`,
+    description: `Thinh Le (Eddie) - teacher turned developer seeking for a job in front-end web development.`,
     author: `@Thinh Le (Eddie)`,
     siteUrl: `https://eddie-thinhle.netlify.com/`,
   },

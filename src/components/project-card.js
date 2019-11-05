@@ -25,7 +25,7 @@ const ProjectCard = ({ projects }) => {
               </div>
               <div className="project-preview-card__text">
                 <Link to={`/${slug}/`}>
-                  <h1>{title}</h1>
+                  <span>{title}</span>
                 </Link>
                 <p> {description}</p>
               </div>

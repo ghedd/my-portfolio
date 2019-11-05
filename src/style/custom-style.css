@@ -354,10 +354,10 @@ header h3 {
 .project-preview-card__text {
   display: grid;
   min-height: 15vh;
-  grid-template-rows: 64px 1fr;
+  grid-template-rows: minmax(64px, auto) 1fr;
   padding: 24px 8px;
 }
-.project-preview-card__text h1 {
+.project-preview-card__text span {
   font-size: 24px;
 }
 .project-preview-card__text p {
@@ -373,16 +373,11 @@ header h3 {
   -webkit-line-clamp: 3;
 }
 @media only screen and (max-width: 480px) {
-  .project-preview-card__text p {
-    display: none;
-  }
-  .project-preview-card__text {
-    padding-bottom: 0;
-  }
 }
-/* -------- end: .project-preview -------- */
 
-/* --------------- project --------------- */
+/* --------- end: project-preview -------- */
+
+/* ------------- project page ------------ */
 .project {
   min-height: 100vh;
   padding: 16px 0;
@@ -463,6 +458,7 @@ header h3 {
 .arr-forward {
   margin-bottom: 8px;
 }
+/* ---------- end: project page ---------- */
 
 /* --------------- contact --------------- */
 .contact {
@@ -602,6 +598,7 @@ header h3 {
     font-size: 5vw;
   }
   /* --------------- projects -------------- */
+
   .project-preview {
     min-height: 80vh;
   }
@@ -617,10 +614,16 @@ header h3 {
     font-size: 4vw;
   }
 
-  .project-preview-card__text a h1 {
-    font-size: 24px !important;
+  .project-preview-card__text a span {
+    font-size: 18px !important;
   }
-
+  .project-preview-card__text p {
+    display: none;
+  }
+  .project-preview-card__text {
+    padding-bottom: 0;
+    text-align: center;
+  }
   .contact p {
     text-align: center;
   }

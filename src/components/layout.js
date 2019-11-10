@@ -40,6 +40,7 @@ const Layout = ({ children }) => {
       </div>
       <footer
         style={{
+          fontSize: 14,
           color: `whitesmoke`,
           maxWidth: 1600,
           margin: `0 auto`,
@@ -47,7 +48,7 @@ const Layout = ({ children }) => {
         }}
       >
         <span>
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()} by Thinh Le (Eddie), built with
           {` `}
           <a
             href="https://www.gatsbyjs.org"

@@ -6,10 +6,13 @@ import {
   FaFacebookSquare,
 } from "react-icons/fa"
 
+import myLogo from "../data/images/logo_transparent.png"
+
 const Contact = () => {
   return (
     <div className="contact" id="contact">
-      <h2>Contact</h2>
+      {/* <h2>Contact</h2> */}
+      <img alt="myLogo" className="contact__my-logo" src={myLogo} />
       <p>Please reach me via: </p>
       <div className="contact__wrapper">
         <div className="contact__detail-wrapper">
@@ -60,7 +63,7 @@ const Contact = () => {
             >
               <FaFacebookSquare
                 style={{
-                  fontSize: 70,
+                  fontSize: 69,
                   padding: 8,
                   alignSelf: "center",
                   paddingBottom: 6,

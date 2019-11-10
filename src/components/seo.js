@@ -96,6 +96,7 @@ function SEO({ description, lang, meta, title }) {
           name="google-site-verification"
           content="Aee5Sz7tPTwc5RUB475kAEjzgv4mNhmP7wK7DPkrBoM"
         />
+        <link rel="canonical" href="https://eddie-thinhle.netlify.com" />
       </Helmet>
     </>
   )

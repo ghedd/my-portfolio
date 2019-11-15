@@ -366,7 +366,7 @@ header h3 {
 
 /* ------------- project page ------------ */
 .project {
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 16px 0;
   display: grid;
   gap: 8px;
@@ -380,7 +380,7 @@ header h3 {
 /* responsive layout */
 @media only screen and (max-width: 958px) {
   .project {
-    min-height: 100vh;
+    min-height: 90vh;
     grid-template-areas:
       "img"
       "img-caption"

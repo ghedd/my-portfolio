@@ -67,7 +67,7 @@ class Header extends Component {
               />
             </Link>
           </div>
-          <div style={{ zIndex: 20, display: "flex" }}>
+          <nav style={{ zIndex: 20, display: "flex" }}>
             <h3 style={{ margin: 0, marginRight: 16 }}>
               <Link
                 to="/#about-me"
@@ -101,7 +101,7 @@ class Header extends Component {
                 Contact
               </Link>
             </h3>
-          </div>
+          </nav>
         </div>
       </header>
     )

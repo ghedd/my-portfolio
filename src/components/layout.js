@@ -28,25 +28,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 1220,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
-        <main className="container-fluid">{children}</main>
-      </div>
-      <footer
-        style={{
-          fontSize: 14,
-          color: `whitesmoke`,
-          maxWidth: 1600,
-          margin: `0 auto`,
-          padding: `0px 1.0875rem 1.45rem`,
-        }}
-      >
+
+      <main className="container-fluid">{children}</main>
+      <footer>
         <span>
           © {new Date().getFullYear()} by Thinh Le (Eddie), built with
           {` `}

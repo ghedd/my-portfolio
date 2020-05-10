@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
 
-      <main className="container-fluid">{children}</main>
+      <main>{children}</main>
       <footer>
         <span>
           © {new Date().getFullYear()} by Thinh Le (Eddie), built with

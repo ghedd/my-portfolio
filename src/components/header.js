@@ -41,14 +41,14 @@ class Header extends Component {
             </Link>
           </div>
           <nav>
-            <Link to="/#about-me">
+            <Link to="#about-me">
               <span>About</span>
             </Link>
-            <Link to="/#project-preview">
+            <Link to="#project-preview">
               <span>Projects</span>
             </Link>
 
-            <Link activeClassName="nav-active" to="/#contact">
+            <Link activeClassName="nav-active" to="#contact">
               <span>Contact</span>
             </Link>
           </nav>

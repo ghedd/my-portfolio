@@ -5,9 +5,9 @@ const Greeting = () => {
   return (
     <>
       <section className="greeting">
-        <div className="greeting-overlay" />
-        <div className="greeting-background" />
-        <div className="typography-fluid typography-fluid-greeting greeting-content">
+        <div className="greeting__curtain" />
+        <div className="greeting__background" />
+        <div className="typography-fluid typography-fluid--greeting greeting-content">
           <h1>
             HI, I'M <span id="my-name">THINH</span>
           </h1>
@@ -16,9 +16,9 @@ const Greeting = () => {
           </p>
           <p>I'm looking for a new oppoturnity</p>
 
-          <div className="btn-wrapper greeting-btn">
+          <div className="btn__wrapper btn__wrapper--greeting">
             <button
-              className="btn btn-primary"
+              className="btn btn--primary"
               onClick={() => (window.location.href = "#project-preview")}
             >
               VIEW PROJECTS

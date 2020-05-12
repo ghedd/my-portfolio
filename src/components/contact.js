@@ -6,13 +6,18 @@ import {
   FaFacebookSquare,
 } from "react-icons/fa"
 
-import myLogo from "../data/images/logo_transparent.png"
+import ContactLogo from "../data/images/sign_modified.svg"
 
 const Contact = () => {
   return (
-    <div className="contact" id="contact">
-      {/* <h2>Contact</h2> */}
-      <img alt="myLogo" className="contact__my-logo" src={myLogo} />
+    <section className="contact container-fluid" id="contact">
+      <div className="section-icon__container">
+        <img clasName="section-icon__icon" src={ContactLogo} alt="my logo" />
+      </div>
+      <div className="section-content">
+        <span className="section-title">GET IN TOUCH</span>
+        <div>{""}</div>
+      </div>
       <p>Please reach me via: </p>
       <div className="contact__wrapper">
         <div className="contact__detail-wrapper">
@@ -84,7 +89,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 export default Contact

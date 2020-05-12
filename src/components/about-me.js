@@ -1,8 +1,12 @@
 import React from "react"
+import AboutIcon from "../data/images/info.svg"
 
 const AboutMe = () => {
   return (
     <section id="about-me" className="about container-fluid">
+      <div className="section-icon__container">
+        <img clasName="section-icon__icon" src={AboutIcon} alt="info icon" />
+      </div>
       <div className="content-wrapper typography-fluid">
         <span className="section-title">ABOUT</span>
         <p>

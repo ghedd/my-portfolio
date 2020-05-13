@@ -17,9 +17,7 @@ const ProjectPreview = ({ projects }) => {
       </div>
       <div className="section-content">
         <span className="section-title">PROJECTS</span>
-        <div className="project-preview__wrapper">
-          <ProjectCard projects={projects} />
-        </div>
+        <ProjectCard projects={projects} />
       </div>
     </section>
   )

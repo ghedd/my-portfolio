@@ -621,6 +621,6 @@ pre tt:after {
   }
 } */
 
-body {
-  overflow-x: hidden;
+main {
+  overflow: hidden;
 }

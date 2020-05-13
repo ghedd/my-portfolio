@@ -13,7 +13,7 @@ const Project = ({
   authorUrl,
 }) => {
   return (
-    <div className="project">
+    <section className="project typography-fluid container-fluid">
       <Image className="project__img" fluid={imageData} alt={title} />
 
       <figcaption className="project__img-caption">
@@ -57,7 +57,7 @@ const Project = ({
           <Link to="/#project-preview">Back to projects</Link>
         </p>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -36,7 +36,7 @@ class Header extends Component {
       <header className={this.state.isVisible ? "shadow" : ""}>
         <div className="header-wrapper">
           <div>
-            <Link to="/" className="site-title">
+            <Link to="/" className="header__site-title">
               <img src={MyLogo} alt="teddle" />
             </Link>
           </div>

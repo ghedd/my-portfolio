@@ -24,7 +24,10 @@ const Contact = () => {
 
         <form className="contact__form">
           <div className="contact__form__field">
-            <label className="contact__form__field__label" htmlFor="usrName">
+            <label
+              className="contact__form__field__label typography-fluid typography-fluid--label"
+              htmlFor="usrName"
+            >
               Name
             </label>
             <input
@@ -32,12 +35,14 @@ const Contact = () => {
               type="text"
               id="usrName"
               name="usrName"
-              value=""
               placeholder="Thinh Le"
             />
           </div>
           <div className="contact__form__field">
-            <label className="contact__form__field__label" htmlFor="usrEmail">
+            <label
+              className="contact__form__field__label typography-fluid typography-fluid--label"
+              htmlFor="usrEmail"
+            >
               Email
             </label>
             <input
@@ -45,21 +50,27 @@ const Contact = () => {
               type="email"
               id="usrEmail"
               name="usrEmail"
-              value=""
+              // value=""
               placeholder="thinhle@example.com"
             />
           </div>
           <div className="contact__form__field">
-            <label className="contact__form__field__label" htmlFor="usrMsg">
+            <label
+              className="contact__form__field__label typography-fluid typography-fluid--label"
+              htmlFor="usrMsg"
+            >
               Message
             </label>
             <textarea
               className="contact__form__field__input"
               id="usrMsg"
               name="usrMsg"
-              value=""
+              // value=""
               placeholder="What's your message?"
             />
+          </div>
+          <div className="contact__form__submit">
+            <button className="btn btn--primary">SEND</button>
           </div>
         </form>
 

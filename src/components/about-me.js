@@ -1,5 +1,5 @@
 import React from "react"
-// import AboutIcon from "../data/images/info.svg"
+
 import DeskScene from "../data/images/desk_scene.svg"
 
 const AboutMe = () => {

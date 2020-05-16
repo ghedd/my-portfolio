@@ -1,4 +1,6 @@
 import React from "react"
+import ContactForm from "../components/contact-form"
+
 // import {
 //   FaLinkedin,
 //   FaTwitterSquare,
@@ -21,59 +23,7 @@ const Contact = () => {
             alt="my logo"
           />
         </div>
-
-        <form className="contact__form">
-          <div className="contact__form__field">
-            <label
-              className="contact__form__field__label typography-fluid typography-fluid--label"
-              htmlFor="usrName"
-            >
-              Name
-            </label>
-            <input
-              className="contact__form__field__input"
-              type="text"
-              id="usrName"
-              name="usrName"
-              placeholder="Thinh Le"
-            />
-          </div>
-          <div className="contact__form__field">
-            <label
-              className="contact__form__field__label typography-fluid typography-fluid--label"
-              htmlFor="usrEmail"
-            >
-              Email
-            </label>
-            <input
-              className="contact__form__field__input"
-              type="email"
-              id="usrEmail"
-              name="usrEmail"
-              // value=""
-              placeholder="thinhle@example.com"
-            />
-          </div>
-          <div className="contact__form__field">
-            <label
-              className="contact__form__field__label typography-fluid typography-fluid--label"
-              htmlFor="usrMsg"
-            >
-              Message
-            </label>
-            <textarea
-              className="contact__form__field__input"
-              id="usrMsg"
-              name="usrMsg"
-              // value=""
-              placeholder="What's your message?"
-            />
-          </div>
-          <div className="contact__form__submit">
-            <button className="btn btn--primary">SEND</button>
-          </div>
-        </form>
-
+        <ContactForm />
         <div className="contact__illustration">
           <img
             className="contact__illustration__img illustration"

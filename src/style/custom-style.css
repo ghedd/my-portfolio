@@ -795,15 +795,17 @@ nav :not(:last-child) {
   bottom: 0;
   left: 50%;
   width: 0;
-  transform: translateX(-50%);
+  transform: translate(-50%, -6px);
   background-color: #639d79;
   transition: width ease-in-out 300ms;
 }
 .contact__form__field:focus-within.contact__form__field::after {
-  width: 100%;
+  /* max-width: 100%; */
+  width: calc(100% - 1rem);
 }
 textarea.contact__form__field__input {
   min-height: 150px !important;
+  resize: vertical;
 }
 
 /* contact responsive */

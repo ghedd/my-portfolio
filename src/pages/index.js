@@ -7,7 +7,7 @@ import ProjectPreview from "../components/project-preview"
 import SEO from "../components/seo"
 import Greeting from "../components/greeting"
 import AboutMe from "../components/about-me"
-import BackToTopBtn from "../components/back-to-top-btn"
+// import BackToTopBtn from "../components/back-to-top-btn"
 import Contact from "../components/contact"
 
 export default () => {
@@ -44,7 +44,7 @@ export default () => {
       <Greeting />
       <AboutMe />
       <ProjectPreview projects={projects} />
-      <BackToTopBtn />
+      {/* <BackToTopBtn /> */}
       <Contact />
     </Layout>
   )

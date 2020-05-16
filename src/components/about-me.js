@@ -1,13 +1,11 @@
 import React from "react"
-import AboutIcon from "../data/images/info.svg"
+// import AboutIcon from "../data/images/info.svg"
+import DeskScene from "../data/images/desk_scene.svg"
 
 const AboutMe = () => {
   return (
     <section id="about-me" className="about container-fluid">
-      <div className="section-icon__container">
-        <img clasName="section-icon__icon" src={AboutIcon} alt="info icon" />
-      </div>
-      <div className="content-wrapper typography-fluid">
+      <div className="about__content content-wrapper typography-fluid">
         <span className="section-title">ABOUT</span>
         <p>
           I'm enthusiastic about{" "}
@@ -30,6 +28,13 @@ const AboutMe = () => {
           </a>{" "}
           which I'm very excited to show you .
         </p>
+      </div>
+      <div className="about__illustration">
+        <img
+          className="about__illustration__img illustration"
+          src={DeskScene}
+          alt="my desk"
+        />
       </div>
     </section>
   )

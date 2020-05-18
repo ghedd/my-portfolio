@@ -1,8 +1,22 @@
 import React from "react"
-
-import DeskScene from "../data/images/desk_scene.svg"
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
+// import DeskScene from "../data/images/desk_scene.svg"
 
 const AboutMe = () => {
+  const imageQuery = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "desk_scene.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+  const aboutImg = imageQuery.file.childImageSharp.fluid
+
   return (
     <section id="about-me" className="about container-fluid">
       <div className="about__content content-wrapper typography-fluid">
@@ -30,9 +44,9 @@ const AboutMe = () => {
         </p>
       </div>
       <div className="about__illustration">
-        <img
+        <Img
           className="about__illustration__img illustration"
-          src={DeskScene}
+          fluid={aboutImg}
           alt="my desk"
         />
       </div>

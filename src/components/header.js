@@ -1,6 +1,7 @@
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { Component } from "react"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import MyLogo from "../data/images/my_logo_rec.svg"
 
 class Header extends Component {
@@ -36,21 +37,21 @@ class Header extends Component {
       <header className={this.state.isVisible ? "shadow" : ""}>
         <div className="header-wrapper">
           <div>
-            <Link to="/" className="header__site-title">
+            <AnchorLink to="/" className="header__site-title">
               <img src={MyLogo} alt="teddle" />
-            </Link>
+            </AnchorLink>
           </div>
           <nav>
-            <Link to="#about-me">
+            <AnchorLink to="/#about-me">
               <span>About</span>
-            </Link>
-            <Link to="#project-preview">
+            </AnchorLink>
+            <AnchorLink to="/#project-preview">
               <span>Projects</span>
-            </Link>
+            </AnchorLink>
 
-            <Link activeClassName="nav-active" to="#contact">
+            <AnchorLink activeClassName="nav-active" to="/#contact">
               <span>Contact</span>
-            </Link>
+            </AnchorLink>
           </nav>
         </div>
       </header>

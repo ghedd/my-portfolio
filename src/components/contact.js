@@ -1,33 +1,34 @@
 import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 import ContactForm from "../components/contact-form"
 
-// import {
-//   FaLinkedin,
-//   FaTwitterSquare,
-//   FaGithubSquare,
-//   FaFacebookSquare,
-// } from "react-icons/fa"
-
-import ConvoScene from "../data/images/convo_scene.svg"
-import ContactLogo from "../data/images/my_logo_rec.svg"
+// import ConvoScene from "../data/images/convo_scene.png"
+import ContactInfo from "./contact-info"
 
 const Contact = () => {
+  const imageQuery = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "convo_scene.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+  const contactImg = imageQuery.file.childImageSharp.fluid
   return (
     <section className="contact container-fluid" id="contact">
       <span className="section-title">GET IN TOUCH</span>
       <div className="contact-wrapper">
-        <div className="contact__info">
-          <img
-            className="contact__info__logo"
-            src={ContactLogo}
-            alt="my logo"
-          />
-        </div>
+        <ContactInfo />
         <ContactForm />
         <div className="contact__illustration">
-          <img
+          <Img
             className="contact__illustration__img illustration"
-            src={ConvoScene}
+            fluid={contactImg}
             alt="conversation"
           />
         </div>

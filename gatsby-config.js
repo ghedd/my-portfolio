@@ -6,9 +6,21 @@ module.exports = {
     siteUrl: `https://eddie-thinhle.netlify.com/`,
   },
   plugins: [
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-anchor-links`,
+      options: {
+        offset: -100,
+      },
+    }`gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `./src/data/images`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

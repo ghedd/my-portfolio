@@ -49,8 +49,8 @@ const ContactForm = () => {
           placeholder="What's your message?"
         />
       </div>
-      <div className="contact__form__submit">
-        <button className="btn btn--primary">SEND</button>
+      <div className="btn__wrapper btn__wrapper--submit">
+        <button className="btn btn--primary btn--full-width">SEND</button>
       </div>
     </form>
   )

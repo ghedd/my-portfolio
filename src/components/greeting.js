@@ -1,8 +1,21 @@
 import React from "react"
-// import BgImage from "../data/images/bg.svg"
-import Illustration from "../data/images/office_scene.svg"
-// import { MdArrowDownward } from "react-icons/md"
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
+
 const Greeting = () => {
+  const imageQuery = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "office_scene.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+  const greetingImg = imageQuery.file.childImageSharp.fluid
+
   return (
     <section className="greeting">
       <div className="typography-fluid typography-fluid--greeting greeting-content">
@@ -30,7 +43,7 @@ const Greeting = () => {
           </button>
         </div>
       </div>
-      <img className="greeting-illustration" src={Illustration} alt="hook" />
+      <Img className="greeting-illustration" fluid={greetingImg} alt="hook" />
     </section>
   )
 }

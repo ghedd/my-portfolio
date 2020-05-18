@@ -5736,10 +5736,10 @@ gatsby-cli@^2.12.10:
     ink "^2.7.1"
     ink-spinner "^3.0.1"
 
-gatsby-cli@^2.12.20:
-  version "2.12.20"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.12.20.tgz#13d43a714222e3f67806ab5408ce38785108894e"
-  integrity sha512-7Y5qs1lUPhr8Op3BGKbFl5AkXTs4kzH+bjNvvqNA+3DX8NuwFGFxev9+yTECoFvUbrLYhlxd1c8AFCJLGVrATw==
+gatsby-cli@^2.12.21:
+  version "2.12.21"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.12.21.tgz#a8c57af428aebdb7882954eaf4d844bd012905f7"
+  integrity sha512-kJNcgMnae5m2ySWY126LT0W+pghgkzgHqUxQpqg6QCaV7FW1k0Bkf7nhKAg0uZgy9NhUpN1wb/26VeQjNFMzAg==
   dependencies:
     "@babel/code-frame" "^7.8.3"
     "@babel/runtime" "^7.9.6"
@@ -5757,7 +5757,7 @@ gatsby-cli@^2.12.20:
     fs-exists-cached "^1.0.0"
     fs-extra "^8.1.0"
     gatsby-core-utils "^1.2.2"
-    gatsby-recipes "^0.1.18"
+    gatsby-recipes "^0.1.19"
     gatsby-telemetry "^1.3.4"
     hosted-git-info "^3.0.4"
     is-valid-path "^0.1.1"
@@ -5848,6 +5848,13 @@ gatsby-plugin-altair-graphql@^2.3.5:
   integrity sha512-qspz9vPLpEjihNSdPIb2bYzmjvf2iDXj4QLbDjzfhK/x9g+wOFJda+vaGQ8mXINCZrD7DM1clUaTT2ICegMa8g==
   dependencies:
     altair-express-middleware "^2.4.7"
+
+gatsby-plugin-anchor-links@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-anchor-links/-/gatsby-plugin-anchor-links-1.1.1.tgz#6a04441f5acc42768447dc6c12474630520a9f90"
+  integrity sha512-mgSHUAEa7RRWD/lcmJVUWD9mIT14EIJvMPcxJ1W2Ev+rNuqBBpk1j4vDWy1uxas+qusi0vrtZ4HdU7mse12qDw==
+  dependencies:
+    scroll-to-element "^2.0.3"
 
 gatsby-plugin-manifest@^2.2.23:
   version "2.4.2"
@@ -6017,10 +6024,10 @@ gatsby-recipes@^0.1.10:
     ws "^7.2.5"
     xstate "^4.9.1"
 
-gatsby-recipes@^0.1.18:
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/gatsby-recipes/-/gatsby-recipes-0.1.18.tgz#ec94adaaa53d7ef8b28c32191fc71d89bfb0fb61"
-  integrity sha512-jGW5FdKNIvWvpmFKN/vDyolIP/9zg+vs3m+/MH2Pm2XNSnBKJVnSS/B5P5UfxMhEYNP+xTBHh5KPntagTOKxXw==
+gatsby-recipes@^0.1.19:
+  version "0.1.19"
+  resolved "https://registry.yarnpkg.com/gatsby-recipes/-/gatsby-recipes-0.1.19.tgz#ac2634452c89253bd18d4f73face44db442b413d"
+  integrity sha512-N++VIje7M0N6zoShZMISyaIzMwbu9Lot7iyNDk6BblI466J8yQvceqj4uDIb9NzI6cQ82Px0yFGXapymsWGg9Q==
   dependencies:
     "@babel/core" "^7.9.6"
     "@babel/generator" "^7.9.6"
@@ -10781,6 +10788,13 @@ querystringify@^2.1.1:
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.1.1.tgz#60e5a5fd64a7f8bfa4d2ab2ed6fdf4c85bad154e"
   integrity sha512-w7fLxIRCRT7U8Qu53jQnJyPkYZIaR4n5151KMfcJlO/A9397Wxb1amJvROTK6TOnp7PfoAmg/qXiNHI+08jRfA==
 
+raf@^3.4.0:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/raf/-/raf-3.4.1.tgz#0742e99a4a6552f445d73e3ee0328af0ff1ede39"
+  integrity sha512-Sq4CW4QhwOHE8ucn6J34MqtZCeWFP2aQSmrlroYgqAV1PjStIhJXxYuTgUIfkEk7zTLjmIjLmU5q+fbD1NnOJA==
+  dependencies:
+    performance-now "^2.1.0"
+
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/randombytes/-/randombytes-2.1.0.tgz#df6f84372f0270dc65cdf6291349ab7a473d4f2a"
@@ -11596,6 +11610,13 @@ scroll-behavior@^0.9.12:
   dependencies:
     dom-helpers "^3.4.0"
     invariant "^2.2.4"
+
+scroll-to-element@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/scroll-to-element/-/scroll-to-element-2.0.3.tgz#99b404fc6a09fe73f3c062cd5b8a14efb6404e4d"
+  integrity sha512-5herPcm9jMfQgRwu94lH5mei+2YhipR4RQ2nAvnBxJb2tG+P7O0ctOKAaAZBXbBejnn+MImh3wrAUA5EcLnjEQ==
+  dependencies:
+    raf "^3.4.0"
 
 seek-bzip@^1.0.5:
   version "1.0.5"

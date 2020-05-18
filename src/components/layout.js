@@ -30,17 +30,14 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
 
       <main>{children}</main>
-      <footer>
-        <span>
-          © {new Date().getFullYear()} by Thinh Le (Eddie), built with
-          {` `}
-          <a
-            href="https://www.gatsbyjs.org"
-            style={{ color: "whitesmoke", textDecoration: "underline" }}
-          >
-            Gatsby
-          </a>
-        </span>
+      <footer className="typography-fluid typography-fluid--footer footer-wrapper">
+        <div className="container-fluid">
+          <p>
+            © {new Date().getFullYear()} by Thinh Le (Eddie), built with
+            {` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </p>
+        </div>
       </footer>
     </>
   )

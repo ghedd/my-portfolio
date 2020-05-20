@@ -28,35 +28,16 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 1220,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
-        <main className="container-fluid">{children}</main>
-      </div>
-      <footer
-        style={{
-          fontSize: 14,
-          color: `whitesmoke`,
-          maxWidth: 1600,
-          margin: `0 auto`,
-          padding: `0px 1.0875rem 1.45rem`,
-        }}
-      >
-        <span>
-          © {new Date().getFullYear()} by Thinh Le (Eddie), built with
-          {` `}
-          <a
-            href="https://www.gatsbyjs.org"
-            style={{ color: "whitesmoke", textDecoration: "underline" }}
-          >
-            Gatsby
-          </a>
-        </span>
+
+      <main>{children}</main>
+      <footer className="typography-fluid typography-fluid--footer footer-wrapper">
+        <div className="container-fluid">
+          <p>
+            © {new Date().getFullYear()} by Thinh (Eddie) Le, built with
+            {` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </p>
+        </div>
       </footer>
     </>
   )

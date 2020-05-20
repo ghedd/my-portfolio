@@ -1,16 +1,16 @@
 import React from "react"
 import ProjectCard from "./project-card"
+// import ProjectIcon from "../data/images/plan_modified.svg"
 
 const ProjectPreview = ({ projects }) => {
   return (
-    <>
-      <div className="project-preview" id="project-preview">
-        <h2>Projects</h2>
-        <div className="project-preview__wrapper">
-          <ProjectCard projects={projects} />
-        </div>
-      </div>
-    </>
+    <section
+      className="project-preview container-fluid container-fluid--dark"
+      id="project-preview"
+    >
+      <span className="section-title">PROJECTS</span>
+      <ProjectCard projects={projects} />
+    </section>
   )
 }
 

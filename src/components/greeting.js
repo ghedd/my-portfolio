@@ -1,20 +1,50 @@
 import React from "react"
-import { MdArrowDownward } from "react-icons/md"
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
+
 const Greeting = () => {
+  const imageQuery = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "office_scene.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+  const greetingImg = imageQuery.file.childImageSharp.fluid
+
   return (
-    <div className="greeting">
-      <h1>Hi, I'm Thịnh Lê</h1>
-      <h2>You can also call me Eddie</h2>
-      <div className="greeting__btn">
-        <p>more about me</p>
-        <button
-          className="btn"
-          onClick={() => (window.location.href = "#about-me")}
-        >
-          <MdArrowDownward />
-        </button>
+    <section className="greeting">
+      <div className="typography-fluid typography-fluid--greeting greeting-content">
+        <h1>
+          HI, I'M <span id="my-name">THINH</span>
+        </h1>
+        <p>
+          You can also call me <span id="my-name-eng">EDDIE</span>
+        </p>
+        <p>I'm looking for a new oppoturnity</p>
+
+        <div className="btn__wrapper btn__wrapper--greeting">
+          <button
+            className="btn btn--primary btn--wide"
+            onClick={() => (global.location.href = "#project-preview")}
+          >
+            VIEW PROJECTS
+          </button>
+          <br />
+          <button
+            className="btn btn--secondary btn--wide"
+            onClick={() => (global.location.href = "/#contact")}
+          >
+            GET IN TOUCH
+          </button>
+        </div>
       </div>
-    </div>
+      <Img className="greeting-illustration" fluid={greetingImg} alt="hook" />
+    </section>
   )
 }
 

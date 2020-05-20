@@ -24,7 +24,7 @@
     "description": "This is another responsive web design from FreeCodeCamp following 'mobile-first' priority in web development. The work shows typycal sections of a landing page."
   },
   {
-    "tag": "JavaScript/React-Redux",
+    "tag": "JS/React",
     "title": "Robotfriends",
     "slug": "project-03",
     "production": "https://ghedd.github.io/reactjs-robotfriends/",
@@ -36,7 +36,7 @@
     "description": "This project is provided by a course on Udemy illustrating the use of ReactJS along with Redux. The web app is able to fetch data from a provided API and store them in Redux store for use within whole app scope."
   },
   {
-    "tag": "JavaScript/React-Redux",
+    "tag": "JS/React",
     "title": "LMS Web App",
     "slug": "project-04",
     "production": "not available",

@@ -1,90 +1,39 @@
 import React from "react"
-import {
-  FaLinkedin,
-  FaTwitterSquare,
-  FaGithubSquare,
-  FaFacebookSquare,
-} from "react-icons/fa"
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
+import ContactForm from "../components/contact-form"
 
-import myLogo from "../data/images/logo_transparent.png"
+// import ConvoScene from "../data/images/convo_scene.png"
+import ContactInfo from "./contact-info"
 
 const Contact = () => {
+  const imageQuery = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "convo_scene.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+  const contactImg = imageQuery.file.childImageSharp.fluid
   return (
-    <div className="contact" id="contact">
-      {/* <h2>Contact</h2> */}
-      <img alt="myLogo" className="contact__my-logo" src={myLogo} />
-      <p>Please reach me via: </p>
-      <div className="contact__wrapper">
-        <div className="contact__detail-wrapper">
-          <div className="contact__contact">
-            <span>Email: </span>
-            <a href="mailto:eddie.thinhle@outlook.com">
-              eddie.thinhle@outlook.com
-            </a>
-          </div>
-          <div className="contact__contact">
-            <span>Mobile: </span>
-            <a href="tel:1 647 657 9202"> 1 647 657 9202</a>
-          </div>
-        </div>
-        <div className="contact__media-wrapper">
-          <div className="contact__media">
-            <a
-              href="https://www.linkedin.com/in/eddie-thinhle"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin
-                style={{
-                  fontSize: 70,
-                  padding: 8,
-                  paddingLeft: 0,
-                  alignSelf: "center",
-                }}
-              />
-            </a>
-          </div>
-          <div className="contact__media">
-            <a
-              href="https://github.com/ghedd"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithubSquare
-                style={{ fontSize: 70, padding: 8, alignSelf: "center" }}
-              />
-            </a>
-          </div>
-          <div className="contact__media">
-            <a
-              href="https://www.facebook.com/thinh.le992"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebookSquare
-                style={{
-                  fontSize: 69,
-                  padding: 8,
-                  alignSelf: "center",
-                  paddingBottom: 6,
-                }}
-              />
-            </a>
-          </div>
-          <div className="contact__media">
-            <a
-              href="https://twitter.com/EddieLewis_92"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaTwitterSquare
-                style={{ fontSize: 70, padding: 8, alignSelf: "center" }}
-              />
-            </a>
-          </div>
+    <section className="contact container-fluid" id="contact">
+      <span className="section-title">GET IN TOUCH</span>
+      <div className="contact-wrapper">
+        <ContactInfo />
+        <ContactForm />
+        <div className="contact__illustration">
+          <Img
+            className="contact__illustration__img illustration"
+            fluid={contactImg}
+            alt="conversation"
+          />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 export default Contact

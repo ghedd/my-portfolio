@@ -1,14 +1,27 @@
 module.exports = {
   siteMetadata: {
-    title: `Eddie's Portfolio`,
-    description: `Thinh Le (Eddie) - teacher turned developer seeking for a job in front-end web development.`,
-    author: `@Thinh Le (Eddie)`,
-    siteUrl: `https://eddie-thinhle.netlify.com/`,
+    title: `teddlecodes`,
+    description: `Thinh (Eddie) Le - teacher turned developer seeking for a job in front-end web development.`,
+    author: `@Thinh (Eddie) Le`,
+    siteUrl: `https://teddlecodes.com`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-anchor-links`,
+      options: {
+        offset: -100,
+      },
+    },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `./src/data/images`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -23,8 +36,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#00c9ff`,
+        theme_color: `#00c9ff`,
         display: `minimal-ui`,
         icon: `src/data/images/favicon.png`, // This path is relative to the root of the site.
       },

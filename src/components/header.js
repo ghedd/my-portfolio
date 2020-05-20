@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 import React, { Component } from "react"
 import { Link } from "gatsby"
 import BurgerNav from "../components/burger-nav"
-import MyLogo from "../data/images/my_logo_rec.svg"
+import MyLogo from "../data/images/my_logo_rec.png"
 
 class Header extends Component {
   constructor(props) {

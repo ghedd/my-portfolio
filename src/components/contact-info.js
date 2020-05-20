@@ -6,7 +6,7 @@ import {
   FaFacebookSquare,
 } from "react-icons/fa"
 
-import ContactLogo from "../data/images/my_logo_rec.svg"
+import ContactLogo from "../data/images/my_logo_rec.png"
 
 const ContactInfo = () => {
   const linkedin = "https://www.linkedin.com/in/thinh-eddie-le/"

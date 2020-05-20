@@ -13,8 +13,19 @@ const BurgerNav = ({ navItems }) => {
     })
   }
   const handleKeyPress = e => {
-    if (e.keyCode === 13) {
-      handleNav()
+    let enter = 13
+    let esc = 27
+    let key = e.keyCode
+    if (key === enter) {
+      setNavState({
+        ...navState,
+        respNavLinks: true,
+      })
+    } else if (key === esc) {
+      setNavState({
+        ...navState,
+        respNavLinks: false,
+      })
     }
   }
   return (

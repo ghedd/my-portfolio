@@ -12,10 +12,20 @@ const BurgerNav = ({ navItems }) => {
       respNavLinks: showNavList,
     })
   }
-
+  const handleKeyPress = e => {
+    if (e.keyCode === 13) {
+      handleNav()
+    }
+  }
   return (
     <nav className="responsive__nav ">
-      <div className="responsive__burger-btn" onClick={handleNav}>
+      <div
+        role="button"
+        tabIndex={0}
+        className="responsive__burger-btn"
+        onClick={handleNav}
+        onKeyDown={handleKeyPress}
+      >
         <div className="burger__btn__line" />
         <div className="burger__btn__line" />
         <div className="burger__btn__line" />
@@ -29,11 +39,7 @@ const BurgerNav = ({ navItems }) => {
       >
         {navItems.map(navItem => {
           return (
-            <li
-              key={navItem.title}
-              className="nav__list-style"
-              onClick={handleNav}
-            >
+            <li key={navItem.title} className="nav__list-style">
               <Link className={navItem.class} to={navItem.anchor}>
                 {navItem.title}
               </Link>

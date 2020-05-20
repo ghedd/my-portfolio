@@ -377,6 +377,9 @@ header:hover {
   width: 30px;
   cursor: pointer;
 }
+/* .responsive__burger-btn:focus {
+  outline: 1px dotted black !important;
+} */
 
 .burger__btn__line {
   display: block;

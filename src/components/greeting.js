@@ -30,14 +30,14 @@ const Greeting = () => {
         <div className="btn__wrapper btn__wrapper--greeting">
           <button
             className="btn btn--primary btn--wide"
-            onClick={() => (window.location.href = "#project-preview")}
+            onClick={() => (global.location.href = "#project-preview")}
           >
             VIEW PROJECTS
           </button>
           <br />
           <button
             className="btn btn--secondary btn--wide"
-            onClick={() => (window.location.href = "#contact")}
+            onClick={() => (global.location.href = "/#contact")}
           >
             GET IN TOUCH
           </button>

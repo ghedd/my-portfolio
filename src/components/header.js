@@ -1,7 +1,7 @@
-// import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { Component } from "react"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
+import { Link } from "gatsby"
+import BurgerNav from "../components/burger-nav"
 import MyLogo from "../data/images/my_logo_rec.svg"
 
 class Header extends Component {
@@ -33,26 +33,45 @@ class Header extends Component {
   }
 
   render() {
+    const navItems = [
+      {
+        title: "About",
+        class: "nav-item typography-fluid--link-clean-style",
+        anchor: "/#about-me",
+      },
+      {
+        title: "Projects",
+        class: "nav-item typography-fluid--link-clean-style",
+        anchor: "/#project-preview",
+      },
+      {
+        title: "Contact",
+        class: "nav-item typography-fluid--link-clean-style",
+        anchor: "/#contact",
+      },
+    ]
     return (
       <header className={this.state.isVisible ? "shadow" : ""}>
         <div className="header-wrapper">
           <div>
-            <AnchorLink to="/" className="header__site-title">
+            <Link to="/" className="header__site-title">
               <img src={MyLogo} alt="teddle" />
-            </AnchorLink>
+            </Link>
           </div>
-          <nav>
-            <AnchorLink to="/#about-me">
-              <span>About</span>
-            </AnchorLink>
-            <AnchorLink to="/#project-preview">
-              <span>Projects</span>
-            </AnchorLink>
-
-            <AnchorLink activeClassName="nav-active" to="/#contact">
-              <span>Contact</span>
-            </AnchorLink>
+          <nav className="nav-bar__full">
+            {navItems.map(navItem => {
+              return (
+                <Link
+                  key={navItem.title}
+                  to={navItem.anchor}
+                  className={navItem.class}
+                >
+                  <span>{navItem.title}</span>
+                </Link>
+              )
+            })}
           </nav>
+          <BurgerNav navItems={navItems} />
         </div>
       </header>
     )
@@ -64,7 +83,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: `teddlecodes`,
 }
 
 export default Header

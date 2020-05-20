@@ -35,9 +35,9 @@ const ContactInfo = () => {
         </a>{" "}
         (VIE)
       </p>
-      <address>43 BECKETT AVE, NORTH YORK, TORONTO, ON</address>
+
       <div className="contact__info__social-media">
-        <a rel="noopener noreferer" href={linkedin.linkedIn}>
+        <a rel="noopener noreferer" href={linkedin}>
           <FaLinkedin />
         </a>
         <a rel="noopener noreferer" href={github}>

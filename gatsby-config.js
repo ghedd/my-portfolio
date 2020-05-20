@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Eddie's Portfolio`,
-    description: `Thinh Le (Eddie) - teacher turned developer seeking for a job in front-end web development.`,
-    author: `@Thinh Le (Eddie)`,
-    siteUrl: `https://eddie-thinhle.netlify.com/`,
+    title: `teddlecodes`,
+    description: `Thinh (Eddie) Le - teacher turned developer seeking for a job in front-end web development.`,
+    author: `@Thinh (Eddie) Le`,
+    siteUrl: `https://teddlecodes.com`,
   },
   plugins: [
     {
@@ -11,7 +11,8 @@ module.exports = {
       options: {
         offset: -100,
       },
-    }`gatsby-plugin-sitemap`,
+    },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     {

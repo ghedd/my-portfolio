@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
       <footer className="typography-fluid typography-fluid--footer footer-wrapper">
         <div className="container-fluid">
           <p>
-            © {new Date().getFullYear()} by Thinh Le (Eddie), built with
+            © {new Date().getFullYear()} by Thinh (Eddie) Le, built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
           </p>

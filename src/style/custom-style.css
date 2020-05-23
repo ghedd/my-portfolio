@@ -828,6 +828,7 @@ header:hover {
     padding-top: 0.5rem;
     padding-bottom: 1.5rem;
     align-items: center !important;
+    justify-content: flex-start;
   }
   .project__description p {
     padding-top: 1rem;
@@ -873,8 +874,8 @@ header:hover {
   padding-left: 16px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 .project__navigation {
   min-width: 40%;

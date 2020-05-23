@@ -56,7 +56,7 @@ body {
   opacity: 0;
   transition: linear 0.3s 0.2s;
 }
-button.btn {
+.btn {
   cursor: pointer;
   display: flex;
   /* height: 56px;
@@ -65,15 +65,37 @@ button.btn {
   align-items: center;
   justify-content: center;
   padding: 0.5rem 0.8rem;
-  border-radius: 50px;
+  border-radius: 50px !important;
   font-size: 0.8rem;
   margin-bottom: 1rem;
 }
-.btn a {
+
+a.btn {
   text-decoration: none !important;
   color: #fafafa !important;
 }
-
+.btn--outlined {
+  background-color: #fafafa !important;
+  border: 2px solid;
+}
+/* .btn--outlined,
+.btn--outlined a {
+  color: #161616 !important;
+} */
+.btn--outlined-pr,
+a.btn--outlined-pr {
+  color: #ffa100 !important;
+}
+.btn--outlined-pr {
+  border-color: #ffa100;
+}
+.btn--outlined-sc,
+a.btn--outlined-sc {
+  color: #00c19b !important;
+}
+.btn--outlined-sc {
+  border-color: #00c19b;
+}
 .btn--wide {
   max-width: 100%;
   width: calc(28% - 2vw);
@@ -82,11 +104,15 @@ button.btn {
 .btn--full-width {
   width: 100%;
 }
+.btn--outlined,
+.btn--primary,
+.btn--secondary {
+  box-shadow: 10px 10px 14px 1px rgba(00, 00, 00, 0.2);
+}
 .btn--primary,
 .btn--secondary {
   /* width: max-content; */
   border: 1px solid transparent;
-  box-shadow: 10px 10px 14px 1px rgba(00, 00, 00, 0.2);
   padding: 0.5rem 1.5rem !important;
   font-weight: 800;
   letter-spacing: 0.094em;
@@ -770,28 +796,45 @@ header:hover {
 
 /* ------------- project page ------------ */
 .project {
-  min-height: 80vh;
-  padding: 16px 0;
+  /* max-height: 100vh; */
+  padding-top: 1rem;
   display: grid;
-  gap: 8px;
+  gap: 2.5rem 1rem;
   grid-template-areas:
     "img img"
     "img-caption img-caption"
     "description navigation";
   grid-template-columns: minmax(35vw, 1fr) minmax(15vw, 1fr);
-  grid-template-rows: 50vh minmax(30px, 3vh) auto;
+  grid-template-rows: minmax(auto, 56vh) minmax(30px, 3vh) minmax(25vh, auto);
 }
 /* responsive layout */
 @media only screen and (max-width: 958px) {
   .project {
     min-height: 90vh;
+    gap: 1.5rem 0;
     grid-template-areas:
       "img"
       "img-caption"
       "description"
       "navigation";
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: minmax(60vh, auto) minmax(3vh, auto) repeat(
+        2,
+        minmax(auto, min-content)
+      );
     grid-template-columns: minmax(auto, 1fr);
+  }
+  .project__navigation-wrapper {
+    padding-left: 0 !important;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    align-items: center !important;
+  }
+  .project__description p {
+    padding-top: 1rem;
+    padding-right: 0 !important;
+  }
+  .project__navigation {
+    width: 100% !important;
   }
 }
 @media only screen and (max-width: 291px) {
@@ -802,23 +845,26 @@ header:hover {
 
 .project__img {
   grid-area: img;
+  margin-top: 5vh;
 }
 .prject__img > image {
   height: auto;
+  object-position: top center;
+  object-fit: contain;
 }
 .project_img-caption {
   grid-area: img-caption;
-  -ms-grid-column-span: 2;
+  /* -ms-grid-column-span: 2; */
 }
 .project__description {
   grid-area: description;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 .project__description p {
-  font-size: 20px;
+  /* font-size: 20px; */
   padding-right: 16px;
   margin: 0;
 }
@@ -827,28 +873,18 @@ header:hover {
   padding-left: 16px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 .project__navigation {
-  display: flex;
-  align-items: center;
-  margin: 0;
+  min-width: 40%;
+  width: calc(0.2vw + 240px);
 }
-.project__navigation a {
+/* .project__navigation a {
   margin: 0;
   padding: 0;
-}
-.project__navigation-arrow {
-  border: 1.5px solid whitesmoke;
-  margin: 2px 8px 2px 2px;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-}
-.arr-forward {
-  margin-bottom: 8px;
-}
+} */
+
 /* ---------- end: project page ---------- */
 
 /* --------------- contact --------------- */
@@ -1112,10 +1148,10 @@ textarea.contact__form__field__input {
 
   /* ---------------- footer --------------- */
   footer {
+    /* position: absolute;
+    bottom: 0; */
     text-align: center;
     font-size: 0.8rem;
-    /* color: whitesmoke, */
-    /* max-width: 1600; */
     margin: 0 auto;
     padding: 0px 1.0875rem 1.45rem;
   }

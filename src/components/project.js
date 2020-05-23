@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import Image from "gatsby-image"
-import { MdArrowBack, MdArrowForward } from "react-icons/md"
 const Project = ({
   title,
   description,
@@ -31,31 +30,33 @@ const Project = ({
         <h1>{title}</h1>
         <p>{description}</p>
       </div>
-      <div className="project__navigation-wrapper">
+      <div className="project__navigation-wrapper btn__wrapper">
         {production === "not available" ? null : (
-          <p className="project__navigation">
-            <a href={production} target="_blank" rel="noopener noreferrer">
-              <MdArrowForward className="project__navigation-arrow" />
-            </a>
-            <a href={production} target="_blank" rel="noopener noreferrer">
-              View production build
-            </a>
-          </p>
+          <a
+            className="btn btn--primary project__navigation"
+            href={production}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View production build
+          </a>
         )}
-        <p className="project__navigation">
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            <MdArrowForward className="project__navigation-arrow" />
-          </a>
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            View code
-          </a>
-        </p>
-        <p className="project__navigation">
-          <Link to="/#project-preview">
-            <MdArrowBack className="project__navigation-arrow" />
-          </Link>
-          <Link to="/#project-preview">Back to projects</Link>
-        </p>
+
+        <a
+          className="btn btn--secondary project__navigation"
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View code
+        </a>
+
+        <Link
+          className="btn btn--outlined  btn--outlined-sc project__navigation"
+          to="/#project-preview"
+        >
+          Back to projects
+        </Link>
       </div>
     </section>
   )

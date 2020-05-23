@@ -810,7 +810,7 @@ header:hover {
 /* responsive layout */
 @media only screen and (max-width: 958px) {
   .project {
-    min-height: 90vh;
+    min-height: 97vh;
     gap: 1.5rem 0;
     grid-template-areas:
       "img"
@@ -826,7 +826,7 @@ header:hover {
   .project__navigation-wrapper {
     padding-left: 0 !important;
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1.5rem;
     align-items: center !important;
   }
   .project__description p {

@@ -69,6 +69,7 @@ class Header extends Component {
                   key={navItem.title}
                   to={navItem.anchor}
                   className={
+                    typeof window !== undefined &&
                     window.location.hash === navItem.hash
                       ? navItem.class + " active"
                       : navItem.class

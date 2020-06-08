@@ -69,7 +69,7 @@ class Header extends Component {
                   key={navItem.title}
                   to={navItem.anchor}
                   className={
-                    global.location.hash === navItem.hash
+                    window.location.hash === navItem.hash
                       ? navItem.class + " active"
                       : navItem.class
                   }

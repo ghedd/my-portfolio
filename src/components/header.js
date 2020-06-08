@@ -1,5 +1,6 @@
 import PropTypes from "prop-types"
 import React, { Component } from "react"
+
 import { Link } from "gatsby"
 import BurgerNav from "../components/burger-nav"
 import MyLogo from "../data/images/my_logo_rec.png"
@@ -38,16 +39,19 @@ class Header extends Component {
         title: "About",
         class: "nav-item typography-fluid--link-clean-style",
         anchor: "/#about-me",
+        hash: "#about-me",
       },
       {
         title: "Projects",
         class: "nav-item typography-fluid--link-clean-style",
         anchor: "/#project-preview",
+        hash: "#project-preview",
       },
       {
         title: "Contact",
         class: "nav-item typography-fluid--link-clean-style",
         anchor: "/#contact",
+        hash: "#contact",
       },
     ]
     return (
@@ -64,7 +68,13 @@ class Header extends Component {
                 <Link
                   key={navItem.title}
                   to={navItem.anchor}
-                  className={navItem.class}
+                  className={
+                    global.location.hash === navItem.hash
+                      ? navItem.class + " active"
+                      : navItem.class
+                  }
+
+                  // className={navItem.class}
                 >
                   <span>{navItem.title}</span>
                 </Link>

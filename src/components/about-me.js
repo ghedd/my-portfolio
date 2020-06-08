@@ -25,7 +25,7 @@ const AboutMe = () => {
           I'm enthusiastic about{" "}
           <span className="about-highlight">web applications</span> and{" "}
           <span className="about-highlight">the Internet</span>. I'm a
-          passionate learner who disire to land my next job as a{" "}
+          passionate learner who desires to land my next job as a{" "}
           <i>
             <span className="about-highlight">front-end web developer</span>
           </i>

@@ -217,6 +217,7 @@ nav span {
   font-weight: 700;
   color: #161616;
 }
+
 .section-title {
   color: #413f3f;
   text-align: center;
@@ -328,7 +329,12 @@ header {
   position: relative;
 }
 
-.nav-item::after {
+/* .active {
+  background-color: red !important;
+} */
+
+.nav-item::after,
+.active::after {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -340,7 +346,8 @@ header {
   transition: width ease-in-out 200ms;
 }
 
-.nav-item:hover.nav-item::after {
+.nav-item:hover.nav-item::after,
+.active::after {
   width: 100%;
 }
 

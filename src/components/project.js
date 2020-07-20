@@ -9,23 +9,26 @@ const Project = ({
   imageData,
   imageCredit,
   imageStock,
+  imageStockUrl,
   authorUrl,
 }) => {
   return (
     <section className="project typography-fluid container-fluid">
       <Image className="project__img" fluid={imageData} alt={title} />
 
-      <figcaption className="project__img-caption">
-        photo by{" "}
-        <a href={authorUrl} target="_blank" rel="noopener noreferrer">
-          {imageCredit}
-        </a>{" "}
-        from{" "}
-        <a href={imageStock} target="_blank" rel="noopener noreferrer">
-          {" "}
-          Burst
-        </a>
-      </figcaption>
+      {authorUrl ? (
+        <figcaption className="project__img-caption">
+          photo by{" "}
+          <a href={authorUrl} target="_blank" rel="noopener noreferrer">
+            {imageCredit}
+          </a>{" "}
+          from{" "}
+          <a href={imageStockUrl} target="_blank" rel="noopener noreferrer">
+            {" "}
+            {imageStock}
+          </a>
+        </figcaption>
+      ) : null}
       <div className="project__description">
         <h1>{title}</h1>
         <p>{description}</p>

@@ -16,6 +16,7 @@ export const query = graphql`
       production
       imageCredit
       imageStock
+      imageStockUrl
       authorUrl
       image {
         childImageSharp {
@@ -37,6 +38,7 @@ const ProjectTemplate = ({ data }) => {
   const imageData = project.image.childImageSharp.fluid
   const imageCredit = project.imageCredit
   const imageStock = project.imageStock
+  const imageStockUrl = project.imageStockUrl
   const authorUrl = project.authorUrl
 
   return (
@@ -47,9 +49,10 @@ const ProjectTemplate = ({ data }) => {
         description={description}
         production={production}
         url={url}
+        imageStock={imageStock}
         imageData={imageData}
         imageCredit={imageCredit}
-        imageStock={imageStock}
+        imageStockUrl={imageStockUrl}
         authorUrl={authorUrl}
       />
       {/* <Reconstructing /> */}

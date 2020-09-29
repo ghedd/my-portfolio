@@ -24,7 +24,8 @@
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1",
     "react-hook-form": "^5.7.2",
-    "react-icons": "^3.7.0"
+    "react-icons": "^3.7.0",
+    "yarn": "^1.22.10"
   },
   "devDependencies": {
     "prettier": "^1.18.2"

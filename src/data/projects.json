@@ -1,16 +1,42 @@
 [
   {
     "tag": "HTML/CSS",
-    "title": "Responsive Form",
-    "slug": "responsive-form",
-    "production": "not available",
-    "url": "https://codepen.io/eddie-lewis/pen/VRBzgK",
-    "image": "./images/kelly-sikkema-tQQ4BwN_UFs-unsplash.jpg",
-    "imageCredit": "Kelly Sikkema",
+    "title": "CollieQ Production Site",
+    "slug": "collieq-production-site",
+    "production": "https://collieq.netlify.app/",
+    "url": "https://github.com/ghedd/prepr-ats-landing-page",
+    "image": "./images/long-queues-of-shoppers.webp",
+    "imageCredit": "Macau Photo Agency",
     "imageStock": "Unsplash",
     "imageStockUrl": "https://unsplash.com/",
-    "authorUrl": "https://unsplash.com/@kellysikkema",
-    "description": "This is an assignment by FreeCodeCamp. It demostrates a HTML5/CSS3 form which prioritizes user experience on mobile devices. The form includes familiar fields as designing an online form."
+    "authorUrl": "https://unsplash.com/@macauphotoagency",
+    "description": "The site is the presentation of CollieQ, a solution suggestion in response to servere impact of COVID-19, aiming to help local brick-and-mortar businesses control in-door occupancy and the queues outside of their shops as well. This idea won the first place of Prepr's FUN Program Beyond Covid-19: Business Challenge."
+  },
+  {
+    "tag": "JS/React",
+    "title": "Random Quote Machine",
+    "slug": "freecodecamp-random-quote-machine",
+    "production": "https://quote-machine.teddlecodes.com/",
+    "url": "https://github.com/ghedd/quote-machine",
+    "image": "./images/danielle-macinnes-IuLgi9PWETU-unsplash.jpg",
+    "imageCredit": "Danielle MacInnes",
+    "imageStock": "Unsplash",
+    "imageStockUrl": "https://unsplash.com/",
+    "authorUrl": "https://unsplash.com/@dsmacinnes",
+    "description": "Random Quote Machine, as described by its name, will randomly generate quotes as requested; the quote can also be tweeted via users' Twitter account. This is one of the five challenge projects provided by freeCodeCamp, focusing on applying front-end framework/libraries to build websites. This site is built using React as the main library."
+  },
+  {
+    "tag": "HTML/CSS",
+    "title": "Responsive Intro Section",
+    "slug": "responsive-intro-section",
+    "production": "https://fementorchallenge-introsection.teddlecodes.com/",
+    "url": "https://github.com/ghedd/fe-mentor--intro-component",
+    "image": "./images/alejandro-escamilla-xII7efH1G6o-unsplash.jpg",
+    "imageCredit": "Alejandro Escamilla",
+    "imageStock": "Unsplash",
+    "imageStockUrl": "https://unsplash.com/",
+    "authorUrl": "https://unsplash.com/@alejandroescamilla",
+    "description": "A hero section designed by Front End Mentor challenging coders to build the section with closest look as possible to the original design using HTML, CSS, and some JS."
   },
   {
     "tag": "HTML/CSS",
@@ -27,16 +53,16 @@
   },
   {
     "tag": "HTML/CSS",
-    "title": "Responsive Intro section",
-    "slug": "responsive-intro-section",
-    "production": "https://fementorchallenge-introsection.teddlecodes.com/",
-    "url": "https://github.com/ghedd/fe-mentor--intro-component",
-    "image": "./images/alejandro-escamilla-xII7efH1G6o-unsplash.jpg",
-    "imageCredit": "Alejandro Escamilla",
+    "title": "Responsive Form",
+    "slug": "responsive-form",
+    "production": "not available",
+    "url": "https://codepen.io/eddie-lewis/pen/VRBzgK",
+    "image": "./images/kelly-sikkema-tQQ4BwN_UFs-unsplash.jpg",
+    "imageCredit": "Kelly Sikkema",
     "imageStock": "Unsplash",
     "imageStockUrl": "https://unsplash.com/",
-    "authorUrl": "https://unsplash.com/@alejandroescamilla",
-    "description": "This is another responsive web design from FreeCodeCamp following 'mobile-first' priority in web development. The work shows typycal sections of a landing page."
+    "authorUrl": "https://unsplash.com/@kellysikkema",
+    "description": "This is an assignment by FreeCodeCamp. It demostrates a HTML5/CSS3 form which prioritizes user experience on mobile devices. The form includes familiar fields as designing an online form."
   },
   {
     "tag": "JS/React",
@@ -50,18 +76,5 @@
     "imageStockUrl": "https://unsplash.com/",
     "authorUrl": "https://unsplash.com/@lenin33",
     "description": "This project is provided by a course on Udemy illustrating the use of ReactJS along with Redux. The web app is able to fetch data from a provided API and store them in Redux store for use within whole app scope."
-  },
-  {
-    "tag": "JS/React",
-    "title": "Random Quote Machine",
-    "slug": "freecodecamp-random-quote-machine",
-    "production": "https://quote-machine.teddlecodes.com/",
-    "url": "https://github.com/ghedd/quote-machine",
-    "image": "./images/danielle-macinnes-IuLgi9PWETU-unsplash.jpg",
-    "imageCredit": "Danielle MacInnes",
-    "imageStock": "Unsplash",
-    "imageStockUrl": "https://unsplash.com/",
-    "authorUrl": "https://unsplash.com/@dsmacinnes",
-    "description": "Random Quote Machine, as described by its name, will randomly generate quotes as requested; the quote can also be tweeted via users' Twitter account. This is one of the five challenge projects provided by freeCodeCamp, focusing on applying front-end framework/libraries to build websites. This site is built using React as the main library."
   }
 ]

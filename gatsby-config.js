@@ -7,6 +7,13 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-172648624-1",
+      },
+    },
+    {
       resolve: `gatsby-plugin-anchor-links`,
       options: {
         offset: -100,

@@ -6,6 +6,8 @@ import {
   FaFacebookSquare,
 } from "react-icons/fa"
 
+import { OutboundLink } from "gatsby-plugin-google-analytics"
+
 import ContactLogo from "../data/images/my_logo_rec.png"
 
 const ContactInfo = () => {
@@ -37,18 +39,18 @@ const ContactInfo = () => {
       </p>
 
       <div className="contact__info__social-media">
-        <a rel="noopener noreferer" href={linkedin}>
+        <OutboundLink rel="noopener noreferer" href={linkedin} target="_blank">
           <FaLinkedin />
-        </a>
-        <a rel="noopener noreferer" href={github}>
+        </OutboundLink>
+        <OutboundLink rel="noopener noreferer" href={github} target="_blank">
           <FaGithubSquare />
-        </a>
-        <a rel="noopener noreferer" href={facebook}>
+        </OutboundLink>
+        <OutboundLink rel="noopener noreferer" href={facebook} target="_blank">
           <FaFacebookSquare />
-        </a>
-        <a rel="noopener noreferer" href={twitter}>
+        </OutboundLink>
+        <OutboundLink rel="noopener noreferer" href={twitter} target="_blank">
           <FaTwitterSquare />
-        </a>
+        </OutboundLink>
       </div>
     </div>
   )
